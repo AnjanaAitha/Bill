@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:background="#2357e7"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/white"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginBottom="60dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:layout_marginRight="5dp"
+            android:text="add items"
+            android:textAlignment="textEnd"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:gravity="end" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:text="STOCK"
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/white"
+            android:gravity="start"
+            android:textSize="30dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:id="@+id/AddItem"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/add">
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/name"
+            android:paddingRight="10dp"
+            android:hint="item name"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"/>
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/price"
+                    android:paddingRight="40dp"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    android:hint="price"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+        <Button
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:id="@+id/add"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="30dp"
+            android:text="ADD ITEM"
+            android:background="@drawable/bluebox"
+            android:textColor="@android:color/white"
+            />
+
+    </LinearLayout>
+</RelativeLayout>
